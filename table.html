@@ -14,7 +14,7 @@
         <a href="table.html">Таблица</a>
     </div>
 
-    <table>
+    <table id="studentsTable">
         <caption>Таблица студентов</caption>
         <thead>
             <tr>
@@ -63,10 +63,31 @@
                 <td>23</td>
             </tr>
 
-
         </tbody>
     </table>
 
+    <form id="addStudentForm">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id" required><br>
+
+        <label for="name">ФИО студента:</label>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="recordBook">Номер зачётной книжки:</label>
+        <input type="text" name="recordBook" id="recordBook"><br>
+
+        <label for="gender">Пол:</label>
+        <select name="gender" id="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select><br>
+
+        <label for="age">Возраст:</label>
+        <input type="number" name="age" id="age" min="1"><br>
+
+        <input type="button" value="Добавить">
+    </form>
 
 </body>
 </html>
